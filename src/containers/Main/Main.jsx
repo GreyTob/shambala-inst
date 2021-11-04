@@ -1,42 +1,27 @@
-// import { useState } from 'react';
-import classes from './Main.module.scss';
-import Logo from '../../components/Logo/Logo';
-import Button from '../../components/Button/Button';
+import Label from '../../components/Label/Label';
+import CoursesLinks from '../../components/CoursesLinks/CoursesLinks';
+import Hr from '../../components/Hr/Hr';
+import SocialItems from '../../components/SocialItems/SocialItems';
+import Contacts from '../../components/Contacts/Contacts';
+import YouTube from '../../components/YouTube/YouTube';
 
 const Main = () => {
-  const main = {
-    social: [
-      {
-        value: 'vk',
-        href: 'https://vk.com/yogashambala74',
-        target: '_blank',
-        rel: 'noreferrer',
-      },
-      {
-        value: 'inst',
-        href: 'https://www.instagram.com/shambhala_yoga/',
-        target: '_blank',
-        rel: 'noreferrer',
-      },
-      {
-        value: 'youTube',
-        href: 'https://www.youtube.com/channel/UCH8EG88m8-wFtm4E4Gnqs1Q',
-        target: '_blank',
-        rel: 'noreferrer',
-      },
-    ],
-  };
-
   return (
-    <div className={classes.Main}>
-      <Logo />
-      {main.social.map((i) => {
-        console.log(i);
-        return (
-          <Button value={i.value} href={i.href} target={i.target} rel={i.rel} />
-        );
-      })}
-    </div>
+    <>
+      <Label name="Ольга Зинатова" descr="Ваш тренер по йоге" />
+
+      <Hr />
+
+      <CoursesLinks />
+
+      <Contacts label="Остались вопросы?" descr="задай их тут:" />
+
+      <Hr rotate={true} />
+
+      <YouTube />
+
+      <SocialItems />
+    </>
   );
 };
 

@@ -1,26 +1,21 @@
 @import '../variables.scss';
 
-.SocialItems {
-  margin: 20px auto;
-  padding-bottom: 20px;
-  max-width: 600px;
-
-  .icons {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 25px;
-    padding: 0 20px;
-  }
+.YouTube {
+  display: grid;
+  place-items: center;
+  margin-top: 15px;
 
   img {
     width: 45px;
     height: 45px;
+    margin-top: 20px;
     transform: scale(1);
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   img:hover,
   img:focus {
+    fill: white;
     transform: scale(1.25);
   }
 }

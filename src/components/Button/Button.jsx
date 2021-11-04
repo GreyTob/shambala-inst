@@ -1,15 +1,16 @@
 import classes from './Button.module.scss';
+import { Link } from 'react-router-dom';
 
-const Button = ({ value, href, target, rel }) => {
-  return (
-    <div className={classes.Button}>
+const Button = ({ value, descr, to }) => (
+  <div className={classes.Button}>
+    <Link to={to}>
       <button className={classes['animated-word']}>
-        <a href={href} target={target} rel={rel} aria-label={value}>
-          {value}
-        </a>
+        <strong>{value}</strong>
+        <br />
+        <small>{descr}</small>
       </button>
-    </div>
-  );
-};
+    </Link>
+  </div>
+);
 
 export default Button;

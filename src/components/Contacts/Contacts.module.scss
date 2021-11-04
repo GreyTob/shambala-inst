@@ -1,15 +1,14 @@
-@import '../variables.scss';
-
-.SocialItems {
-  margin: 20px auto;
-  padding-bottom: 20px;
+.Contacts {
+  text-align: center;
+  margin: 0 auto;
+  // margin-top: -10px;
+  margin-bottom: 15px;
   max-width: 600px;
 
   .icons {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 25px;
-    padding: 0 20px;
+    margin: 25px;
   }
 
   img {
@@ -22,5 +21,9 @@
   img:hover,
   img:focus {
     transform: scale(1.25);
+  }
+
+  p {
+    font-weight: 700;
   }
 }

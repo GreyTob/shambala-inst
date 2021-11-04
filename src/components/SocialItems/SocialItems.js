@@ -1,18 +1,48 @@
-import { ReactSVG } from 'react-svg'
-import classes from './SocialItems.module.scss'
+import classes from './SocialItems.module.scss';
 
-import vk from '../../assets/social_icons/negative/vk/vk2.svg'
-import instagram from '../../assets/social_icons/negative/Instagram/Negative.svg'
-import youTube from '../../assets/social_icons/negative/YouTube/Negative.svg'
+import { useContext } from 'react';
+import { Context } from '../../Context';
 
-const SocialItems = ({ value, href, target, rel }) => (
-  <li className={classes.SocialItems}>
-    <a href={href} target={target} rel={rel} aria-label={value}>
-      <ReactSVG
-        src={value === 'vk' ? vk : value === 'inst' ? instagram : youTube}
-      />
-    </a>
-  </li>
-)
+import vk from '../../assets/icons/vk.png';
+import inst from '../../assets/icons/instagram.png';
+import fb from '../../assets/icons/facebook.png';
+import ok from '../../assets/icons/odnoklassniki.png';
 
-export default SocialItems
+const SocialItems = () => {
+  const { data } = useContext(Context);
+
+  return (
+    <footer className={classes.SocialItems}>
+      <h3>Не забудь подписаться в соцсетях</h3>
+
+      <div className={classes.icons}>
+        {data.socials.map((social) => {
+          return (
+            <a
+              href={social.href}
+              target={social.target}
+              rel={social.rel}
+              aria-label={social.value}
+              key={social.value}
+            >
+              <img
+                src={
+                  social.value === 'vk'
+                    ? vk
+                    : social.value === 'fb'
+                    ? fb
+                    : social.value === 'ok'
+                    ? ok
+                    : inst
+                }
+                alt={social.value}
+              />
+            </a>
+          );
+        })}
+      </div>
+    </footer>
+  );
+};
+
+export default SocialItems;
