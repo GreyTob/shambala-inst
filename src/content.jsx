@@ -1,35 +1,35 @@
 export const data = {
   courses: [
-    {
-      to: '/neurophysiology',
-      photo: '',
-      courseName: 'Нейрофизиология',
-      descr: 'Короткое описание',
-      date: 'Дата',
-      longDescr: `Длинное описание Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit optio?`,
-      place: 'г. МАГНИТОГОРСК',
-      teachers: 'Ольга Зинатова',
-      cost: 'Стоимость',
-      format: 'Очно или онлайн',
-      methodology: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit`,
-      result:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit',
-    },
-    {
-      to: '/something',
-      photo: '',
-      courseName: 'Что-то еще...',
-      descr: 'Короткое описание',
-      date: 'Дата',
-      longDescr: `длинное описание Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit optio?`,
-      place: 'г. МАГНИТОГОРСК',
-      teachers: 'Ольга Зинатова',
-      cost: 'Стоимость',
-      format: 'Очно или онлайн',
-      methodology: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit`,
-      result:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit',
-    },
+    // {
+    //   to: '/neurophysiology',
+    //   photo: '',
+    //   courseName: 'Нейрофизиология',
+    //   descr: 'Короткое описание',
+    //   date: 'Дата',
+    //   longDescr: `Длинное описание Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit optio?`,
+    //   place: 'г. МАГНИТОГОРСК',
+    //   teachers: 'Ольга Зинатова',
+    //   cost: 'Стоимость',
+    //   format: 'Очно или онлайн',
+    //   methodology: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit`,
+    //   result:
+    //     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit',
+    // },
+    // {
+    //   to: '/something',
+    //   photo: '',
+    //   courseName: 'Что-то еще...',
+    //   descr: 'Короткое описание',
+    //   date: 'Дата',
+    //   longDescr: `длинное описание Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit optio?`,
+    //   place: 'г. МАГНИТОГОРСК',
+    //   teachers: 'Ольга Зинатова',
+    //   cost: 'Стоимость',
+    //   format: 'Очно или онлайн',
+    //   methodology: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit`,
+    //   result:
+    //     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit',
+    // },
     {
       to: '/acroyoga',
       photo: 'acroyoga',
@@ -86,7 +86,7 @@ export const data = {
   contacts: [
     {
       value: 'telegram',
-      href: 'tg://resolve?domain=NikName',
+      href: 'tg://resolve?domain=yogashambala',
       target: '',
       rel: '',
     },
@@ -96,12 +96,12 @@ export const data = {
       target: '',
       rel: '',
     },
-    {
-      value: 'skype',
-      href: 'Skype:login?chat',
-      target: '',
-      rel: '',
-    },
+    // {
+    //   value: 'skype',
+    //   href: 'Skype:login?chat',
+    //   target: '',
+    //   rel: '',
+    // },
     {
       value: 'viber',
       href: 'viber://add?number=79049746832',

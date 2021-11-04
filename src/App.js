@@ -15,29 +15,31 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoad(true);
-    }, 1500);
-  }, [setIsLoad]);
+    }, 1600);
+  }, [isLoad]);
 
   const { data } = useContext(Context);
-  console.log(data);
 
   return (
-    <Layout>
+    <>
       {!isLoad ? (
         <Loader />
       ) : (
-        <Switch>
-          <Route path="/" exact component={Main} />
+        <Layout>
+          <Switch>
+            <Route path="/" exact component={Main} />
 
-          {data.courses.map((course) => {
-            return <Route path={course.to} component={Course} />;
-          })}
+            {data.courses.map((course) => (
+              <Route path={course.to} component={Course} key={course.to} />
+            ))}
 
-          <Redirect to="/" component={Main} />
-          <Main />
-        </Switch>
+            <Redirect to="/" component={Main} />
+
+            <Main />
+          </Switch>
+        </Layout>
       )}
-    </Layout>
+    </>
   );
 };
 

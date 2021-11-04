@@ -1,5 +1,9 @@
+import { useState } from 'react';
 import classes from './AboutCourse.module.scss';
 import Hr from '../Hr/Hr';
+
+import Loader from 'react-loader-spinner';
+// import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 import acroyoga from '../../assets/photo/acroyoga.jpg';
 // import neurophysiology from '../../assets/photo/neurophysiology.jpg';
@@ -10,12 +14,22 @@ const AboutCourse = ({ data }) => {
   //список фотографии. Название должно совпадать с data.photo
   const photos = { acroyoga };
 
+  const [photoOnload, setPhotoOnload] = useState(false);
+
   return (
     <section className={classes.AboutCourse}>
       {data.longDescr ? <p>{data.longDescr}</p> : null}
 
+      {!photoOnload ? (
+        <Loader type="BallTriangle" color="#6D2E5A" height={80} width={80} />
+      ) : null}
+
       {data.photo ? (
-        <img src={photos[data.photo]} alt={data.courseName} />
+        <img
+          src={photos[data.photo]}
+          alt={data.courseName}
+          onLoad={() => setPhotoOnload(true)}
+        />
       ) : null}
 
       {data.date ? (
