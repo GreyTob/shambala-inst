@@ -30,4 +30,14 @@
     max-width: 600px;
     width: 100%;
   }
+
+  animation: appear 0.3s ease-in;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }

@@ -20,4 +20,15 @@
     font-weight: 500;
     letter-spacing: 1.5px;
   }
+
+  animation: appear 0.3s ease-in;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }

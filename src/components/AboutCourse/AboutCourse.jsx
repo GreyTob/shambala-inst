@@ -20,16 +20,16 @@ const AboutCourse = ({ data }) => {
     <section className={classes.AboutCourse}>
       {data.longDescr ? <p>{data.longDescr}</p> : null}
 
-      {!photoOnload ? (
-        <Loader type="BallTriangle" color="#6D2E5A" height={80} width={80} />
-      ) : null}
-
       {data.photo ? (
         <img
           src={photos[data.photo]}
           alt={data.courseName}
           onLoad={() => setPhotoOnload(true)}
         />
+      ) : null}
+
+      {!photoOnload && data.photo ? (
+        <Loader type="BallTriangle" color="#6D2E5A" height={80} width={80} />
       ) : null}
 
       {data.date ? (

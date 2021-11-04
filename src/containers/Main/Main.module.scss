@@ -1,0 +1,14 @@
+.Main {
+  // opacity: 1;
+  animation: widthIcon 0.5s ease-in;
+
+  @keyframes widthIcon {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
