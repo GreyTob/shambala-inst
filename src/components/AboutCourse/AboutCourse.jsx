@@ -3,12 +3,9 @@ import classes from './AboutCourse.module.scss';
 import Hr from '../Hr/Hr';
 
 import Loader from 'react-loader-spinner';
-// import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 import acroyoga from '../../assets/photo/acroyoga.jpg';
 // import neurophysiology from '../../assets/photo/neurophysiology.jpg';
-// import three from '../../assets/photo/three.jpg';
-// import four from '../../assets/photo/four.jpg';
 
 const AboutCourse = ({ data }) => {
   //список фотографии. Название должно совпадать с data.photo

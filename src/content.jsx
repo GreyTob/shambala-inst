@@ -56,32 +56,32 @@ export const data = {
       value: 'fb',
       href: 'https://touch.facebook.com/olga.zinatova',
       target: '_blank',
-      rel: '',
+      rel: 'noopener',
     },
     {
       value: 'inst',
       href: 'https://www.instagram.com/shambhala_yoga/',
       target: '_blank',
-      rel: '',
+      rel: 'noopener',
     },
     {
       value: 'vk',
       href: 'https://vk.com/yogashambala74',
       target: '_blank',
-      rel: '',
+      rel: 'noopener',
     },
     {
       value: 'ok',
       href: 'https://ok.ru/profile/115087064096',
       target: '_blank',
-      rel: '',
+      rel: 'noopener',
     },
   ],
   youTube: {
     value: 'youTube',
     href: 'https://www.youtube.com/channel/UCH8EG88m8-wFtm4E4Gnqs1Q',
     target: '_blank',
-    rel: '',
+    rel: 'noopener',
   },
   contacts: [
     {
@@ -92,7 +92,7 @@ export const data = {
     },
     {
       value: 'whatsapp',
-      href: 'https://wa.me/79049746832?text=Здравствуйте,%20Ольга.%20',
+      href: 'https://wa.me/79049746832?text=Здравствуйте,%20Ольга%20',
       target: '',
       rel: '',
     },
