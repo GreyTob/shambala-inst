@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "author": "LSV",
+  "license": "ISC",
   "dependencies": {
     "web-vitals": "^1.0.1"
   },
