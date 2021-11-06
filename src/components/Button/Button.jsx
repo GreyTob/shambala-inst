@@ -1,7 +1,7 @@
 import classes from './Button.module.scss';
 import { Link } from 'react-router-dom';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome/index.es';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Button = ({ value, descr, to }) => {

@@ -11,11 +11,12 @@ import { Context } from './Context';
 
 const App = () => {
   const [isLoad, setIsLoad] = useState(false);
+  const loading = 1600;
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoad(true);
-    }, 1600);
+    }, loading);
   }, [isLoad]);
 
   const { data } = useContext(Context);
