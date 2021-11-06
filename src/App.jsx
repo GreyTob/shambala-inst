@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Loader from './containers/Loader/Loader';
@@ -12,17 +12,16 @@ import { Context } from './Context';
 const App = () => {
   const [isLoad, setIsLoad] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoad(true);
-    }, 1600);
-  }, [isLoad]);
+  setTimeout(() => {
+    setIsLoad(true);
+    sessionStorage.setItem('isFirstLoad', 'true');
+  }, 1600);
 
   const { data } = useContext(Context);
 
   return (
     <>
-      {!isLoad ? (
+      {!isLoad && !sessionStorage.getItem('isFirstLoad') ? (
         <Loader />
       ) : (
         <Layout>

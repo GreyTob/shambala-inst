@@ -1,5 +1,5 @@
 import Label from '../../components/Label/Label';
-import Hr from '../../components/Hr/Hr';
+import HrShambala from '../../components/HrShambala/HrShambala';
 import Button from '../../components/Button/Button';
 import AboutCours from '../../components/AboutCourse/AboutCourse';
 import Contacts from '../../components/Contacts/Contacts.js';
@@ -22,7 +22,7 @@ const Course = () => {
     <>
       <Label name={course.courseName} descr={course.descr} />
 
-      <Hr />
+      <HrShambala />
 
       <AboutCours data={course} />
 

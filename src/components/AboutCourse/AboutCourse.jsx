@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import classes from './AboutCourse.module.scss';
-import Hr from '../Hr/Hr';
+import HrShambala from '../HrShambala/HrShambala';
 
 import Loader from 'react-loader-spinner';
 
@@ -66,7 +66,7 @@ const AboutCourse = ({ data }) => {
           {data.methodology.replace(/\*/g, '-')}
         </p>
       ) : null}
-      <Hr rotate={true} />
+      <HrShambala rotate={true} />
       {data.result ? (
         <p>
           <strong>Что в итоге?</strong>
