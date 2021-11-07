@@ -9,7 +9,7 @@ import { Context } from './Context';
 import { data } from './content';
 
 const app = (
-  <Context.Provider value={{ data }}>
+  <Context.Provider value={ data }>
     <BrowserRouter>
       <React.StrictMode>
         <App />

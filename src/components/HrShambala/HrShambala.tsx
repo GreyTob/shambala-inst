@@ -1,6 +1,10 @@
 import classes from './HrShambala.module.scss';
 
-const HrShambala = ({ rotate }) => {
+type rotate = {
+  rotate: boolean
+}
+
+const HrShambala:React.FC<rotate> = ({ rotate }) => {
   let cls = [classes.HrShambala];
 
   if (rotate) cls.push(classes.reverse);

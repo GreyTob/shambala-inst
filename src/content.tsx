@@ -1,4 +1,6 @@
-export const data = {
+import {IData} from './interfaces'
+
+export const data: IData = {
   courses: [
     // {
     //   to: '/neurophysiology',
@@ -79,7 +81,7 @@ export const data = {
   ],
   youTube: {
     value: 'youTube',
-    href: 'https://www.youtube.com/channel/UCH8EG88m8-wFtm4E4Gnqs1Q',
+    href: 'https://www.youtube.com/channel/UCW0xVC_n-4S8U43-UvqA0iQ',
     target: '_blank',
     rel: 'noopener',
   },

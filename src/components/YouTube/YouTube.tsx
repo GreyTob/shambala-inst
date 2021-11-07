@@ -4,9 +4,9 @@ import youTube from '../../assets/icons/icon-youtube.png';
 import { useContext } from 'react';
 import { Context } from '../../Context';
 
-const YouTube = () => {
-  const { data } = useContext(Context);
-  const { href, rel, value, target } = data.youTube;
+const YouTube: React.FC = () => {
+  const  data  = useContext(Context);
+  const { href, rel, value, target } = data!.youTube;
 
   return (
     <section className={classes.YouTube}>

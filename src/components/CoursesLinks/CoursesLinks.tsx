@@ -4,13 +4,13 @@ import Button from '../Button/Button';
 import { useContext } from 'react';
 import { Context } from '../../Context';
 
-const CoursesLinks = () => {
-  const { data } = useContext(Context);
+const CoursesLinks: React.FC = () => {
+  const data  = useContext(Context);
 
   return (
     <section className={classes.CoursesLinks}>
       <p>Доступные курсы:</p>
-      {data.courses.map((course) => {
+      {data!.courses.map((course) => {
         return (
           <Button
             value={course.courseName}
