@@ -1,35 +1,37 @@
-export const data = {
+import {IData} from './interfaces'
+
+export const data: IData = {
   courses: [
-    // {
-    //   to: '/neurophysiology',
-    //   photo: '',
-    //   courseName: 'Нейрофизиология',
-    //   descr: 'Короткое описание',
-    //   date: 'Дата',
-    //   longDescr: `Длинное описание Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit optio?`,
-    //   place: 'г. МАГНИТОГОРСК',
-    //   teachers: 'Ольга Зинатова',
-    //   cost: 'Стоимость',
-    //   format: 'Очно или онлайн',
-    //   methodology: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit`,
-    //   result:
-    //     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit',
-    // },
-    // {
-    //   to: '/something',
-    //   photo: '',
-    //   courseName: 'Что-то еще...',
-    //   descr: 'Короткое описание',
-    //   date: 'Дата',
-    //   longDescr: `длинное описание Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit optio?`,
-    //   place: 'г. МАГНИТОГОРСК',
-    //   teachers: 'Ольга Зинатова',
-    //   cost: 'Стоимость',
-    //   format: 'Очно или онлайн',
-    //   methodology: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit`,
-    //   result:
-    //     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit',
-    // },
+    {
+      to: '/neurophysiology',
+      photo: '',
+      courseName: 'Нейрофизиология',
+      descr: 'Короткое описание',
+      date: 'Дата',
+      longDescr: `Длинное описание Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit optio?`,
+      place: 'г. МАГНИТОГОРСК',
+      teachers: 'Ольга Зинатова',
+      cost: 'Стоимость',
+      format: 'Очно или онлайн',
+      methodology: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit`,
+      result:
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit',
+    },
+    {
+      to: '/something',
+      photo: '',
+      courseName: 'Что-то еще...',
+      descr: 'Короткое описание',
+      date: 'Дата',
+      longDescr: `длинное описание Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit optio?`,
+      place: 'г. МАГНИТОГОРСК',
+      teachers: 'Ольга Зинатова',
+      cost: 'Стоимость',
+      format: 'Очно или онлайн',
+      methodology: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit`,
+      result:
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum officia placeat incidunt laborum consequatur, nobis nostrum accusantium quia reprehenderit',
+    },
     {
       to: '/acroyoga',
       photo: 'acroyoga',

@@ -1,17 +1,27 @@
 import { useState } from 'react';
 import classes from './AboutCourse.module.scss';
 import Hr from '../Hr/Hr';
-
 import Loader from 'react-loader-spinner';
+
 
 import acroyoga from '../../assets/photo/acroyoga.jpg';
 // import neurophysiology from '../../assets/photo/neurophysiology.jpg';
 
-const AboutCourse = ({ data }) => {
-  //список фотографии. Название должно совпадать с data.photo
-  const photos = { acroyoga };
 
-  const [photoOnload, setPhotoOnload] = useState(false);
+import {ICourses} from '../../interfaces'
+type CoursesProps = {
+ data : ICourses
+}
+
+type PhotosType ={
+  [key: string]: string;
+}
+
+const AboutCourse: React.FC<CoursesProps>  = ({data}) => {
+  //список фотографии. Название должно совпадать с data.photo
+  const photos: PhotosType = { acroyoga };
+
+  const [photoOnload, setPhotoOnload] = useState<boolean>(false);
 
   return (
     <section className={classes.AboutCourse}>

@@ -9,8 +9,8 @@ import Layout from './hoc/layout/Layout';
 
 import { Context } from './Context';
 
-const App = () => {
-  const [isLoad, setIsLoad] = useState(false);
+const App: React.FC = () => {
+  const [isLoad, setIsLoad] = useState<boolean>(false);
   const loading = 1600;
 
   useEffect(() => {
@@ -19,7 +19,8 @@ const App = () => {
     }, loading);
   }, [isLoad]);
 
-  const { data } = useContext(Context);
+  const data = useContext(Context);
+  
 
   return (
     <>
@@ -30,13 +31,12 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Main} />
 
-            {data.courses.map((course) => (
+            {data!.courses.map((course) => (
               <Route path={course.to} component={Course} key={course.to} />
             ))}
 
-            <Redirect to="/" component={Main} />
+            <Redirect to="/"/>
 
-            <Main />
           </Switch>
         </Layout>
       )}

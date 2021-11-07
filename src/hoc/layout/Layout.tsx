@@ -1,6 +1,6 @@
 import classes from './Layout.module.scss';
 
-const Layout = ({ children }) => (
+const Layout: React.FC = ({ children }) => (
   <div className={classes.Layout}>
     <main>{children}</main>
   </div>

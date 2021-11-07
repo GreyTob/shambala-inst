@@ -4,16 +4,22 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-const Button = ({ value, descr, to }) => {
-  const scrollTop = (val) => window.scrollTo(val);
+type ButtonProps = {
+  value: string;
+  descr?: string;
+  to: string;
+}
+
+const Button:React.FC<ButtonProps> = ({ value, descr, to }) => {
+  const scrollTop = ( val: {}) => window.scrollTo(val)
   return (
     <div className={classes.Button}>
       <Link
         to={to}
         onClick={
           to === '/'
-            ? scrollTop({ top: 0 })
-            : scrollTop({ top: 0, behavior: 'smooth' })
+            ? () => scrollTop({ top: 0 })
+            : () => scrollTop({ top: 0, behavior: 'smooth' })
         }
       >
         <button className={classes['animated-word']}>

@@ -5,12 +5,11 @@ import SocialItems from '../../components/SocialItems/SocialItems';
 import Contacts from '../../components/Contacts/Contacts';
 import YouTube from '../../components/YouTube/YouTube';
 
-const Main = () => {
-  return (
+const Main: React.FC = () =>  (
     <>
       <Label name="Ольга Зинатова" descr="Ваш тренер по йоге" />
 
-      <Hr />
+      <Hr rotate={false}/>
 
       <CoursesLinks />
 
@@ -23,6 +22,5 @@ const Main = () => {
       <SocialItems />
     </>
   );
-};
 
 export default Main;
